@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #333333;
+}
+h1 {
+    font-size: 57px;
+    line-height: 130px;
+}
+
+.intro {
+    background-color: #2e2e3d;
+    height: calc(100vh);
+    width: calc(100vw);
+    overflow: hidden;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.link {
+    color: inherit;
+    margin-right: 40px;
+}
+
+#special {
+    color: #c870c8;
+}
+#aah {
+    font-size: 37px;
+    line-height: 60px;
+}
+#beh {
+    font-size: x-large;
+    line-height: 45px;
+}
+#ceh {
+    font-size: 27px;
+    line-height: 30px;
+}
+#deh {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+#eeh {
+    margin-bottom: 0;
+}
