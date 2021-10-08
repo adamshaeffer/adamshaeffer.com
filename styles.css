@@ -5,11 +5,15 @@
 }
 
 html {
-    background-color: #333333;
+    background-color: #c0c0c0;
 }
 h1 {
-    font-size: 57px;
-    line-height: 130px;
+    margin-top: 6vh;
+    font-size: 5vw;
+    line-height: 5vw;
+}
+img {
+    display: block;
 }
 
 .intro {
@@ -17,38 +21,80 @@ h1 {
     height: calc(100vh);
     width: calc(100vw);
     overflow: hidden;
+    color: #c0c0c0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+.navBar {
+    background-color: #2e2e3d;
+    height: calc(10vh);
+    width: calc(100vw);
+    color: #c0c0c0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.link {
+    color: inherit;
+    margin-right: 4vw;
+}
+.selfLink {
+    color: #646464;
+    margin-right: 4vw;
+    font-weight: bolder;
+}
+.main {
+    overflow: hidden;
     text-align: center;
     vertical-align: baseline;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #eaeaea;
+    color: #2e2e3d;
     text-decoration: none;
 }
 
-.link {
-    color: inherit;
-    margin-right: 40px;
+#start {
+    font-size: 5vw;
 }
-
 #special {
     color: #c870c8;
 }
 #aah {
-    font-size: 37px;
-    line-height: 60px;
+    font-size: 3vw;
+    line-height: 5vw;
 }
 #beh {
-    font-size: x-large;
-    line-height: 45px;
+    font-size: 1.9vw;
+    line-height: 4vw;
 }
 #ceh {
-    font-size: 27px;
-    line-height: 30px;
+    font-size: 2vw;
+    line-height: 2vw;
 }
 #deh {
-    font-size: 27px;
-    line-height: 30px;
-    margin-bottom: 40px;
+    font-size: 2vw;
+    line-height: 3vw;
+    margin-bottom: 6vh;
+}
+#links {
+    margin-bottom: 7vh;
+    margin-left: 2vw;
+    font-size: 3vw;
+    line-height: 13vh;
 }
 #eeh {
     margin-bottom: 0;
+    font-size: 1.7vw;
+    line-height: 2vw;
+}
+#danceDog {
+    margin-left: auto;
+    margin-right: auto;
+    width: 7vw;
+}
+#rollaball {
+    margin-left: auto;
+    margin-right: auto;
+}
+#navName {
+    margin-left: 10vw;
 }
