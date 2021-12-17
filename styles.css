@@ -86,22 +86,40 @@ img {
     padding-right: 30vmin;
 }
 .meinfo {
-    font-size: 1.5vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    font-size: 2vw;
+    line-height: 5vh;
+    padding-left: 19vw;
+    padding-right: 19vw;
     text-align: left;
 }
 .collapsible {
     background-color: #2E8955;
     color: #E1E1E1;
     cursor: pointer;
-    padding: 18px;
-    width: 90%;
+    padding: 1vw;
+    width: 70%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 2vw;
     font-family: inherit;
+    margin-bottom: 1vh;
+}
+.colmain {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5vw;
+    padding-top: 3vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 3vh;
+    color: #E1E1E1;
+    overflow: hidden;
+    background-color: #39A869;
+    font-size: 2vw;
+    line-height: 5vh;
+    text-align: left;
+    display: none;
 }
 
 #start {
@@ -116,11 +134,17 @@ img {
 }
 #beh {
     font-size: 1.9vw;
-    line-height: 4vw;
+    line-height: 2.5vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 1.5vw;
 }
 #ceh {
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 1.9vw;
+    line-height: 2.5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 1.5vw;
 }
 #deh {
     font-size: 2vw;
@@ -138,9 +162,19 @@ img {
     font-size: 1.7vw;
     line-height: 2vw;
 }
-#danceDog {
+#jumpSlime {
     width: 7vw;
     image-rendering: pixelated;
+}
+#slimeDead {
+    width:7vw;
+    image-rendering: pixelated;
+    display: none;
+}
+#slimeAttack {
+    background-color: inherit;
+    border: 0;
+    cursor: url(images/swordCursor.png), auto;
 }
 #gameimage {
     width: 5vw;
@@ -167,4 +201,57 @@ img {
     padding-left: 15vw;
     padding-right: 15vw;*/
     margin-bottom: 7vh;
+}
+#dropdown {
+    width: 3vmin;
+    margin-left: 55vw;
+    image-rendering: pixelated;
+    display: inline-block;
+    text-align: right;
+}
+#dropdown2 {
+    width: 3vmin;
+    margin-left: 55vw;
+    image-rendering: pixelated;
+    display: none;
+    text-align: right;
+}
+
+.loader {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 50000;
+}
+
+div[class^="pix"] {
+    position: absolute;
+    background: none;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    transform-origin: top;
+}
+
+.pix1 {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0)
+    rotate(180deg);
+}
+.pix2 {
+    top: 10%;
+    left: 10%;
+    transform: rotate(135deg);
+}
+.pix3 {
+    top: 50%;
+    left: 0;
+    transform: rotate(90deg);
+}
+.pix4 {
+    top: 90%;
+    left: 10%;
+    transform: rotate(45deg);
 }
