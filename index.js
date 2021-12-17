@@ -27,7 +27,6 @@ for(i = 0; i < coll.length; i++) {
 }
 
 const slimeAttack = () => {
-    splashfx();
     if(health == 11) 
         slimeText.innerHTML = "Hey! Why are you attacking him? Isn't he just sooo cute?";
     if(health == 10)
@@ -59,18 +58,4 @@ const slimeAttack = () => {
         slimeDead.style.display = "block";
     }
     jumpSlime.style.width = size+`vw`;
-}
-
-$(document).ready(function () {
-    var duration = 150;
-    var height = 30;
-    $(document).mousemove(function () {});
-
-    $("*").click(function (e) {
-         $(".loader").offset({
-            top: e.pageY - 13,
-            left: e.pageX - 13
-         });
-         
-    });
 }
