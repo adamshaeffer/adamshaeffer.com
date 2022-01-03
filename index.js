@@ -7,6 +7,7 @@ const jumpSlime = document.getElementById("jumpSlime");
 const slimeDead = document.getElementById("slimeDead");
 const slimeText = document.getElementById("eeh");
 const slimeButt = document.getElementById("slimeAttack");
+const slimeText2 = document.getElementById("effy");
 var health = 11;
 var size = 7;
 
@@ -27,6 +28,7 @@ for(i = 0; i < coll.length; i++) {
 }
 
 const slimeAttack = () => {
+    slimeText2.style.display = "none";
     if(health == 11) 
         slimeText.innerHTML = "Hey! Why are you attacking him? Isn't he just sooo cute?";
     if(health == 10)

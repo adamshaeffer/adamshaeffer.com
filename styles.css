@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -16,23 +16,63 @@ h1 {
 img {
     display: block;
 }
+p {
+    font-size: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 3vh;
+}
 
-.intro {
+#navBar {
     background-color: #2E8955;
-    height: calc(100vh);
-    width: calc(100vw);
-    overflow: hidden;
     color: #E1E1E1;
+    height: calc(10vh);
+    margin-bottom: 0px;
+}
+#home {
+    background-color: #2E8955;
+    color: #E1E1E1;
+    height: calc(70vh);
+    overflow: hidden;
     text-align: center;
     vertical-align: baseline;
     text-decoration: none;
 }
-.navBar {
-    margin-bottom: 0px;
-    background-color: #2E8955;
-    height: calc(10vh);
-    width: calc(100vw);
-    color: #E1E1E1;
+#aboutme {
+    color: #2E9855;
+    margin-top: 2vh;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+#games {
+    color: #2E9855;
+    margin-top: 2vh;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+
+}
+#projects {
+    color: #2E9855;
+    margin-top: 2vh;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+
+}
+#slimer {
+    color: #2e9855;
+    height: calc(30vh);
+    margin-top: 3vh;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-weight: bold;
 }
 .link {
     color: inherit;
@@ -59,7 +99,28 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-.gamelink {
+.skillgrid {
+    background-color: #2E8955;
+    color: #e1e1e1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 12vmin;
+    padding-right: 12vmin;
+    grid-gap: 2vmin;
+}
+.skillblock {
+    background-color: #E1E1E1;
+    color: #2E8955;
+    border: solid 2px #c6c4c4;
+}
+.skillTop {
+    font-size: 4vw;
+    text-decoration: underline;
+}
+.skill {
+    margin: 1vh;
+}
+#gamelink {
     color: inherit;
     margin-left: auto;
     margin-right: auto;
@@ -69,12 +130,14 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2vmin;
-    grid-gap: 2vmin;
+    grid-gap: -2vw;
 }
 .gridunit {
     background-color: #C6C4C4;
     border: solid 2px #2E8955;
-    padding: 2vmin;
+    height: 130px;
+    width: calc(31vw);
+    padding-top: 3vh;
 }
 .gameinfo {
     font-size: 1.5vw;
@@ -124,32 +187,32 @@ img {
 
 #start {
     font-size: 5vw;
+    margin-bottom: 4vh;
 }
 #special {
     color: #DFEB82;
 }
 #aah {
     font-size: 3vw;
-    line-height: 5vw;
 }
 #beh {
     font-size: 1.9vw;
-    line-height: 2.5vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    padding-bottom: 1.5vw;
+    padding-left: 11vw;
+    padding-right: 11vw;
 }
 #ceh {
     font-size: 1.9vw;
-    line-height: 2.5vw;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-bottom: 1.5vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
 }
 #deh {
     font-size: 2vw;
     line-height: 3vw;
     margin-bottom: 6vh;
+}
+#effy {
+    font-size: 1vw;
+    margin-bottom: 0;
 }
 #links {
     margin-bottom: 7vh;
@@ -215,43 +278,4 @@ img {
     image-rendering: pixelated;
     display: none;
     text-align: right;
-}
-
-.loader {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 50000;
-}
-
-div[class^="pix"] {
-    position: absolute;
-    background: none;
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-    transform-origin: top;
-}
-
-.pix1 {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,0)
-    rotate(180deg);
-}
-.pix2 {
-    top: 10%;
-    left: 10%;
-    transform: rotate(135deg);
-}
-.pix3 {
-    top: 50%;
-    left: 0;
-    transform: rotate(90deg);
-}
-.pix4 {
-    top: 90%;
-    left: 10%;
-    transform: rotate(45deg);
 }

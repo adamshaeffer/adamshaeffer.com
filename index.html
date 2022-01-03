@@ -7,35 +7,119 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="intro">
+        <div id="home">
             <h1 id="start">
                 <span>Hello! My name is</span>
                 <span id="special">Adam Shaeffer</span><span>!</span>
             </h1>
             <p id="aah">I'm a Junior Software Engineer looking to start my career!</p>
-            <p id="beh">I have experience in both game and web development, and I'm currently studying Computer Science at Arizona State University, on track to graduate May 2025</p>
+            <p id="beh">I have experience in many things programming, including game, web, and app development, and mathematical solutions. I'm currently studying Computer Science at Arizona State University, on track to graduate May 2025</p>
             <p id="ceh">Take a look at all the things I've done and made! There's some videogames, websites, and other code that I've helped with!</p>
             <div id="homelinks">
-                <a class="homelink" href="aboutme.html">ABOUT ME</a>
-                <a class="homelink" href="games.html">GAMES</a>
-                <a class="homelink" href="projects.html">PROJECTS</a>
+                <a class="homelink" href="#aboutme">ABOUT ME</a>
+                <a class="homelink" href="#games">GAMES</a>
+                <a class="homelink" href="#projects">PROJECTS</a>
                 <a id="resume" href="images/Resume - Adam Shaeffer.pdf" download>
                     <img src="images/download.png" alt="Download Arrow" id="downloads"> RESUME
                     <img src="images/download.png" alt="Download Arrow" id="downloads"></a>
             </div>
+        </div>
+        <div id="slimer">
             <p id="eeh">In the meantime, enjoy this cute little slimey guy!</p>
+            <p id="effy">(Definitely don't try slicing him)</p>
             <button id="slimeAttack" onclick="slimeAttack()">
                 <img src="images/jumpSlime.gif" alt="Jumping Slime" id="jumpSlime" class="image">
                 <img src="images/slimeDead.png" alt="Dead Slime" id="slimeDead" class="image">
             </button>
         </div>
+        <div id="navBar">
+            <h2 id="links">
+                <a href="#home" class="link">HOME</a>
+                <a href="#aboutme" class="selfLink">ABOUT ME</a>
+                <a href="#games" class="link">GAMES</a>
+                <a href="#projects" class="link">PROJECTS</a>    
+                <span id="navName">Adam Shaeffer</span>
+            </h2>
+        </div>
+        <div id="aboutme">
+            <h1>ABOUT ME</h1>
+            <p>I'm pretty new to the software engineering game, but I'm doing my best to learn as much as I can and gain the much needed experience. All things considering I have progressed really quickly and learned a lot on my own!</p>
+            <p>I started down the path of logic and mathematics from a very young age, being placed in the gifted program for creative and quantitative learning in the first grade. I continued to excell in math and problem-solving completing the most advanced courses with fantastic grades all through High School. I even got the highest mathematics score in the history of my Elementary School in the NWEA standardized test.</p>
+            <p>I was finally introduced to programming my Sophomore year of High School when I took the Honors Computer Programming 1-2 class. I instantly fell in love with programming and started making games and solving complex problems in Java. After learning the basics, my progress was halted somewhat when the school took the class off their curriculum. Although I wasn't learning professionally, I continued to do personal projects and do stuff on my own.</p>
+            <p>I then went on my mission for the Church of Jesus Christ of Latter-Day Saints in Brazil, South Dakota, Nebraska, and Texas. During my mission, I had to learn to adapt to many different situations and peoples in order to reach my goals. Many things came up that weren't planned for, such as the Covid-19 pandemic, but I continued to help and serve the people where I found myself. I also had opportunities to lead among the other missionaries, teaching and training dozens of missionaries, and analyzing the effectiveness of about one-hundred missionaries.</p>
+            <p>After coming home from my two-year volunteer mission, I jumped right back into my learning about programming. I created this website, continued solving problems from Project Euler, and started looking into new methods of making games. After 4 months, I started college at Arizona State University and resumed my official learning.</p>
+            <div class="skillgrid">
+                <p></p>
+                <h1>SKILLS</h1>
+                <p></p>
+                <div class="skillblock">
+                    <p class="skillTop">Languages</p>
+                    <p class="skill">C#</p>
+                    <p class="skill">Java</p>
+                    <p class="skill">Python</p>
+                    <p class="skill">JavaScript</p>
+                    <p class="skill">HTML</p>
+                    <p class="skill">CSS</p>
+                </div>
+                <div class="skillblock">
+                    <p class="skillTop">Platforms</p>
+                    <p class="skill">Vim</p>
+                    <p class="skill">Unity</p>
+                    <p class="skill">Git/GitHub</p>
+                    <p class="skill">VS Code</p>
+                    <p class="skill"></p>
+                    <p class="skill"></p>
+                </div>
+                <div class="skillblock">
+                    <p class="skillTop">Attributes</p>
+                    <p class="skill">Friendly</p>
+                    <p class="skill">Dedicated</p>
+                    <p class="skill">Quick Learner</p>
+                    <p class="skill">Fast Problem Solver</p>
+                    <p class="skill">Team Player</p>
+                    <p class="skill">Reliable</p>
+                </div>
+            </div>
+        </div>
+        <div id="navBar">
+            <h2 id="links">
+                <a href="#home" class="link">HOME</a>
+                <a href="#aboutme" class="link">ABOUT ME</a>
+                <a href="#games" class="selfLink">GAMES</a>
+                <a href="#projects" class="link">PROJECTS</a>    
+                <span id="navName">Adam Shaeffer</span>
+            </h2>
+        </div>
+        <div id="games">
+            <h1>GAMES</h1>
+            <div class="gamegrid">
+                <a class="gridunit" id="gamelink" href="games/RollABall/rollaball.html">
+                    <img src="images/rollaball_icon.png" alt="Roll-A-Ball" id="gameimage" class="image">
+                Roll-A-Ball</a>                            
+                <a class="gridunit" id="gamelink" href="games/PizzaClicker/pizzaclicker.html">
+                    <img src="games/PizzaClicker/images/pizzalogo.png" alt="Pizza Clicker" id="gameimage" class="image">
+                Pizza Clicker</a>
+                <p class="gridunit" id="gamelink">Platform Fun</p>
+                <p class="gridunit" id="gamelink">Maze Game</p>
+                <p class="gridunit" id="gamelink">5</p>
+                <p class="gridunit" id="gamelink">6</p>
+                <p class="gridunit" id="gamelink">7</p>
+            </div>
+        </div>
+        <div id="navBar">
+            <h2 id="links">
+                <a href="#home" class="link">HOME</a>
+                <a href="#aboutme" class="link">ABOUT ME</a>
+                <a href="#games" class="link">GAMES</a>
+                <a href="#projects" class="selfLink">PROJECTS</a>    
+                <span id="navName">Adam Shaeffer</span>
+            </h2>
+        </div>
+        <div id="projects">
+            <h1>PROJECTS</h1>
+            <div class="projectgrid"></div>
+                <a class="project" href="adamshaeffer.com">This website</a>
+        </div>
         <script src="index.js"></script>
     </body>
-
-    <div class="loader">
-        <div class="pix1"></div>
-        <div class="pix2"></div>
-        <div class="pix3"></div>
-        <div class="pix4"></div>
-    </div>
 </html>
