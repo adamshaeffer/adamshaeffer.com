@@ -74,6 +74,12 @@ p {
     text-decoration: none;
     font-weight: bold;
 }
+#footer {
+    background-color: #2E8955;
+    color: #E1E1E1;
+    text-align: center;
+    height: 25vh;
+}
 .link {
     color: inherit;
     margin-right: 4vw;
@@ -103,22 +109,102 @@ p {
     background-color: #2E8955;
     color: #e1e1e1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 12vmin;
-    padding-right: 12vmin;
-    grid-gap: 2vmin;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    grid-gap: 3vmin;
 }
 .skillblock {
     background-color: #E1E1E1;
     color: #2E8955;
     border: solid 2px #c6c4c4;
 }
+.skillgridtop {
+    grid-column: 1/5;
+}
 .skillTop {
     font-size: 4vw;
     text-decoration: underline;
+    margin-left: 0;
+    margin-right: 0;
 }
 .skill {
     margin: 1vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+.projectgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2vh;
+    grid-gap: 5vmin;
+}
+.projectimg {
+    display: inline-block;
+    width: 29vw;
+    border-radius: 15px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.project {
+    background-color: #e1e1e1;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+.projectimg:hover,
+.projectimg:focus {
+    filter: brightness(65%); 
+    cursor: pointer;
+}
+.modal {
+    background-color: #000000;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.modalcont {
+    background-color: #E1E1E1;
+    margin: 5% auto;
+    padding: 20px;
+    border: 3px solid #2E9855;
+    width: 80%;
+}
+.close {
+    color: #2E8955;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modalgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+    width: 40vw;
+    margin: 0 auto;
+}
+.modallink {
+    background-color: #2E9855;
+    color: #DFEB82;
+    border-radius: 10px;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    font-size: 2vw;
+    text-decoration: none;
 }
 #gamelink {
     color: inherit;
@@ -148,42 +234,6 @@ p {
     padding-left: 30vmin;
     padding-right: 30vmin;
 }
-.meinfo {
-    font-size: 2vw;
-    line-height: 5vh;
-    padding-left: 19vw;
-    padding-right: 19vw;
-    text-align: left;
-}
-.collapsible {
-    background-color: #2E8955;
-    color: #E1E1E1;
-    cursor: pointer;
-    padding: 1vw;
-    width: 70%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 2vw;
-    font-family: inherit;
-    margin-bottom: 1vh;
-}
-.colmain {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom: 5vw;
-    padding-top: 3vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-bottom: 3vh;
-    color: #E1E1E1;
-    overflow: hidden;
-    background-color: #39A869;
-    font-size: 2vw;
-    line-height: 5vh;
-    text-align: left;
-    display: none;
-}
 
 #start {
     font-size: 5vw;
@@ -210,6 +260,11 @@ p {
     line-height: 3vw;
     margin-bottom: 6vh;
 }
+#eeh {
+    margin-bottom: 0;
+    font-size: 1.7vw;
+    line-height: 2vw;
+}
 #effy {
     font-size: 1vw;
     margin-bottom: 0;
@@ -219,11 +274,6 @@ p {
     margin-left: 2vw;
     line-height: 13vh;
     font-size: 3vw;
-}
-#eeh {
-    margin-bottom: 0;
-    font-size: 1.7vw;
-    line-height: 2vw;
 }
 #jumpSlime {
     width: 7vw;
@@ -264,18 +314,4 @@ p {
     padding-left: 15vw;
     padding-right: 15vw;*/
     margin-bottom: 7vh;
-}
-#dropdown {
-    width: 3vmin;
-    margin-left: 55vw;
-    image-rendering: pixelated;
-    display: inline-block;
-    text-align: right;
-}
-#dropdown2 {
-    width: 3vmin;
-    margin-left: 55vw;
-    image-rendering: pixelated;
-    display: none;
-    text-align: right;
 }

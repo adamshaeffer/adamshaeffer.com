@@ -2,7 +2,7 @@
 <!--This is the index page. It has my name, some basic info about me, and a cool dancing dog. Also, link to download my resume.-->
 <html lang="en">
     <head>
-        <title>I'm Adam Shaeffer</title>
+        <title>Adam Shaeffer - Software engineer</title>
         <link rel="icon" href="images/linkIcon.png">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -49,9 +49,7 @@
             <p>I then went on my mission for the Church of Jesus Christ of Latter-Day Saints in Brazil, South Dakota, Nebraska, and Texas. During my mission, I had to learn to adapt to many different situations and peoples in order to reach my goals. Many things came up that weren't planned for, such as the Covid-19 pandemic, but I continued to help and serve the people where I found myself. I also had opportunities to lead among the other missionaries, teaching and training dozens of missionaries, and analyzing the effectiveness of about one-hundred missionaries.</p>
             <p>After coming home from my two-year volunteer mission, I jumped right back into my learning about programming. I created this website, continued solving problems from Project Euler, and started looking into new methods of making games. After 4 months, I started college at Arizona State University and resumed my official learning.</p>
             <div class="skillgrid">
-                <p></p>
-                <h1>SKILLS</h1>
-                <p></p>
+                <h1 class="skillgridtop">SKILLS</h1>
                 <div class="skillblock">
                     <p class="skillTop">Languages</p>
                     <p class="skill">C#</p>
@@ -78,6 +76,13 @@
                     <p class="skill">Fast Problem Solver</p>
                     <p class="skill">Team Player</p>
                     <p class="skill">Reliable</p>
+                </div>
+                <div class="skillblock">
+                    <p class="skillTop">Foreign Languages</p>
+                    <p class="skill">English - Native</p>
+                    <p class="skill">Portuguese - Fluent</p>
+                    <p class="skill">Spanish - Intermediate</p>
+                    <p class="skill"></p>
                 </div>
             </div>
         </div>
@@ -118,7 +123,47 @@
         <div id="projects">
             <h1>PROJECTS</h1>
             <div class="projectgrid"></div>
-                <a class="project" href="adamshaeffer.com">This website</a>
+                <!--All project links should be an image of size 684x326 px-->
+                <button id="modalbtn" class="project">
+                    <img src="images/thumbnail.png" alt="Site Thumbnail" class="projectimg"> 
+                </button>
+                <div id="mymodal" class="modal">
+                    <div class="modalcont">
+                        <span class="close x">&times;</span>
+                        <p>My portfolio as a software engineer. If you're reading this than you're already on the website so...</p>
+                        <p>This is the first website I've ever made! I made the whole thing with about 76-100 hours of work. When I started this project, I knew nothing about web development, and learned everything necessary for this project with Google and YouTube!</p>
+                        <p>Feel free to take a look at the code I wrote to design this website in the GitHub link! While you're at it, you can look at some of the other projects I've done or participated in.</p>
+                        <div class="modalgrid">
+                            <a class="modallink" href="http://adamshaeffer.com" target="_blank">Visit Website</a>
+                            <a class="modallink" href="https://github.com/adamshaeffer/adamshaeffer.com" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <button id="modalbtn1" class="project">
+                    <img src="images/projecteuler.png" alt="Euler Thumbnail" class="projectimg"> 
+                </button>
+                <div id="mymodal1" class="modal">
+                    <div class="modalcont">
+                        <span class="close x1">&times;</span>
+                        <p>I have spent a lot of time learning with Project Euler, complex mathematical problems that would be impossible to solve by hand, but with programming, are made quite doable. I have so far solved the first 30 problems in Project Euler.</p>
+                        <p>This GitHub link will take you to the programs I have written to solve these problems.</p>
+                        <a class="modallink" href="https://github.com/adamshaeffer/ProjectEuler" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <button id="modalbtn2" class="project">
+                    <img src="images/randomcode.png" alt="Code Thumbnail" class="projectimg"> 
+                </button>
+                <div id="mymodal2" class="modal">
+                    <div class="modalcont">
+                        <span class="close x2">&times;</span>
+                        <p>Over the years as a programmer, I have written a bunch of code to do some silly or pointless things. They might be assignments, challenges, or just something I wanted to do.</p>
+                        <p>Follow the link to my GitHub repository that contains a much of that code!</p>
+                        <a class="modallink" href="https://github.com/adamshaeffer/RandomCode" target="_blank">GitHub</a>
+                    </div>
+                </div>
+        </div>
+        <div id="footer">
+            <h1 id="special">Adam Shaeffer</h1>
         </div>
         <script src="index.js"></script>
     </body>

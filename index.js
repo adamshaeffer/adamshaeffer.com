@@ -61,3 +61,49 @@ const slimeAttack = () => {
     }
     jumpSlime.style.width = size+`vw`;
 }
+
+var modal = document.getElementById("mymodal");
+var btn = document.getElementById("modalbtn");
+var span = document.getElementsByClassName("x")[0];
+var modal1 = document.getElementById("mymodal1");
+var btn1 = document.getElementById("modalbtn1");
+var span1 = document.getElementsByClassName("x1")[0];
+var modal2 = document.getElementById("mymodal2");
+var btn2 = document.getElementById("modalbtn2");
+var span2 = document.getElementsByClassName("x2")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+btn1.onclick = function() {
+    modal1.style.display = "block";
+} 
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+} 
+window.onclick = function() {
+    if(event.target == modal) {
+        modal.style.display = "none";
+    }
+    if(event.target == modal1) {
+        modal1.style.display = "none";
+    }
+    if(event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+document.onkeydown = function(e) {
+    switch(e.which) {
+        case 27: modal.style.display = "none",
+        modal1.style.display = "none",
+        modal2.style.display = "none";
+    }
+}
