@@ -30,17 +30,15 @@ for(i = 0; i < coll.length; i++) {
 const slimeAttack = () => {
     slimeText2.style.display = "none";
     if(health == 11) 
-        slimeText.innerHTML = "Hey! Why are you attacking him? Isn't he just sooo cute?";
-    if(health == 10)
-        slimeText.innerHTML = "Yoooo, you should stop.";
+        slimeText.innerHTML = "Hey! Why are you attacking him? What'd he do to you?";
+    if(health == 8)
+        slimeText.innerHTML = "Yo, you should stop.";
     if(health == 5)
         slimeText.innerHTML = "Dude, just stop.";
     if(health == 3)
         slimeText.innerHTML = "'Well, I guess this is the end.'";
-    if(health == 2)
-        slimeText.innerHTML = "'GOODBYE WORLD! It was nice while it lasted!'";
     if(health == 1)
-        slimeText.innerHTML = "R.I.P. - Slimey Boy - 2021-Today - Murdered in cold blood by some lame-o";
+        slimeText.innerHTML = "R.I.P. - Slimey Boy - 2021-Today - Sliced to death whilst hopping around.";
     if(health == -3)
         slimeText.innerHTML = "There's nothing else, you killed him already.";
     if(health == -7)
@@ -71,6 +69,9 @@ var span1 = document.getElementsByClassName("x1")[0];
 var modal2 = document.getElementById("mymodal2");
 var btn2 = document.getElementById("modalbtn2");
 var span2 = document.getElementsByClassName("x2")[0];
+var cmodal = document.getElementById("contactmodal");
+var cbtn = document.getElementById("cmodalbtn");
+var cspan = document.getElementsByClassName("cx")[0];
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -89,6 +90,12 @@ span2.onclick = function() {
 btn2.onclick = function() {
     modal2.style.display = "block";
 } 
+cbtn.onclick = function() {
+    cmodal.style.display = "block";
+}
+cspan.onclick = function() {
+    cmodal.style.display = "none";
+}
 window.onclick = function() {
     if(event.target == modal) {
         modal.style.display = "none";
@@ -99,11 +106,15 @@ window.onclick = function() {
     if(event.target == modal2) {
         modal2.style.display = "none";
     }
+    if(event.target == cmodal) {
+        cmodal.style.display = "none";
+    }
 }
 document.onkeydown = function(e) {
     switch(e.which) {
         case 27: modal.style.display = "none",
         modal1.style.display = "none",
-        modal2.style.display = "none";
+        modal2.style.display = "none",
+        cmodal.style.display = "none";
     }
 }

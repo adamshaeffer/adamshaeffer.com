@@ -39,7 +39,7 @@ p {
     text-decoration: none;
 }
 #aboutme {
-    color: #2E9855;
+    color: #2E8955;
     margin-top: 2vh;
     overflow: hidden;
     text-align: center;
@@ -47,7 +47,7 @@ p {
     text-decoration: none;
 }
 #games {
-    color: #2E9855;
+    color: #2E8955;
     margin-top: 2vh;
     overflow: hidden;
     text-align: center;
@@ -56,7 +56,7 @@ p {
 
 }
 #projects {
-    color: #2E9855;
+    color: #2E8955;
     margin-top: 2vh;
     overflow: hidden;
     text-align: center;
@@ -65,7 +65,7 @@ p {
 
 }
 #slimer {
-    color: #2e9855;
+    color: #2E8955;
     height: calc(30vh);
     margin-top: 3vh;
     overflow: hidden;
@@ -74,11 +74,20 @@ p {
     text-decoration: none;
     font-weight: bold;
 }
+#slimeAttack {
+    outline: none;
+    box-shadow: none;
+}
+#slimeAttack:hover {
+    filter: brightness(.8);
+}
 #footer {
     background-color: #2E8955;
     color: #E1E1E1;
     text-align: center;
-    height: 25vh;
+    margin-top: 5vh;
+    padding-top: .5vh;
+    height: 35vh;
 }
 .link {
     color: inherit;
@@ -92,6 +101,12 @@ p {
     color: #DFEB82;
     margin-right: 4vw;
     font-weight: bolder;
+}
+.link:hover,
+.homelink:hover,
+.selfLink:hover,
+#resume:hover {
+    filter: brightness(.75);
 }
 .main {
     margin-top: 0px;
@@ -112,6 +127,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
     padding-left: 5vmin;
     padding-right: 5vmin;
+    padding-bottom: 5vh;
     grid-gap: 3vmin;
 }
 .skillblock {
@@ -152,8 +168,7 @@ p {
     outline: none;
     box-shadow: none;
 }
-.projectimg:hover,
-.projectimg:focus {
+.projectimg:hover {
     filter: brightness(65%); 
     cursor: pointer;
 }
@@ -171,9 +186,10 @@ p {
 }
 .modalcont {
     background-color: #E1E1E1;
+    color: #2E8955;
     margin: 5% auto;
     padding: 20px;
-    border: 3px solid #2E9855;
+    border: 3px solid #2E8955;
     width: 80%;
 }
 .close {
@@ -196,7 +212,7 @@ p {
     margin: 0 auto;
 }
 .modallink {
-    background-color: #2E9855;
+    background-color: #2E8955;
     color: #DFEB82;
     border-radius: 10px;
     padding-left: 2vmin;
@@ -225,6 +241,9 @@ p {
     width: calc(31vw);
     padding-top: 3vh;
 }
+.gridunit:hover {
+    filter: brightness(.75);
+}
 .gameinfo {
     font-size: 1.5vw;
     display: grid;
@@ -233,6 +252,37 @@ p {
     text-align: left;
     padding-left: 30vmin;
     padding-right: 30vmin;
+}
+#gamedis {
+    background-color: #2E8955;
+    color: #E1E1E1;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.contactgrid {
+    background-color: #2E8955;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 30%;
+}
+.contactbtn {
+    background-color: #2E8955;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.contactimg {
+    border: solid 2px #E1E1E1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 4vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    width: 4vw;
+}
+.contactimg:hover {
+    filter: brightness(.7);
+    cursor: pointer;
 }
 
 #start {
@@ -295,6 +345,7 @@ p {
 }
 #navName {
     margin-left: 10vw;
+    color: #DFEB82;
 }
 #resume {
     color: #DFEB82;
@@ -309,9 +360,5 @@ p {
 }
 #homelinks {
     font-size: 3vw;
-/*    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 15vw;
-    padding-right: 15vw;*/
     margin-bottom: 7vh;
 }
