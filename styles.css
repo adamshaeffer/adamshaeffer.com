@@ -284,6 +284,9 @@ p {
     filter: brightness(.7);
     cursor: pointer;
 }
+#contmodalcont {
+    margin: 20% auto;
+}
 
 #start {
     font-size: 5vw;
