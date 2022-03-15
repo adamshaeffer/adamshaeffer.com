@@ -253,6 +253,12 @@ p {
     padding-left: 30vmin;
     padding-right: 30vmin;
 }
+.gametext {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 0;
+    
+}
 #gamedis {
     background-color: #2E8955;
     color: #E1E1E1;
