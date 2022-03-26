@@ -11,6 +11,20 @@ const slimeText2 = document.getElementById("effy");
 var health = 11;
 var size = 7;
 
+const navBar = document.getElementById("navBar");
+var rect = navBar.getBoundingClientRect();
+
+window.onload = function() {
+    function checkNav() {
+        rect = navBar.getBoundingClientRect();
+        if(rect.top < 0) {
+            navBar.style.position = "sticky";
+            navBar.style.top = 0;
+        }
+    }
+    setInterval(checkNav, 1);
+}
+
 for(i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
