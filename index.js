@@ -96,11 +96,11 @@ const slimeAttack = () => {
     if(health == 8)
         slimeText.innerHTML = "Yo, you should stop.";
     if(health == 5)
-        slimeText.innerHTML = "Dude, just stop.";
+        slimeText.innerHTML = "Dude, quit it.";
     if(health == 3)
-        slimeText.innerHTML = "'Well, I guess this is the end.'";
+        slimeText.innerHTML = "'Well, I guess this is the end!'";
     if(health == 1)
-        slimeText.innerHTML = "R.I.P. - Slimey Boy - 2021-Today - Sliced to death whilst hopping around.";
+        slimeText.innerHTML = "R.I.P. | Slimey Boy | 2021-Today | Sliced to death whilst hopping around.";
     if(health == -3)
         slimeText.innerHTML = "There's nothing else, you killed him already.";
     if(health == -7)
