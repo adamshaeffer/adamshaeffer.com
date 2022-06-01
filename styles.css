@@ -13,6 +13,9 @@ h1 {
     font-size: 5vw;
     line-height: 5vw;
 }
+h2 {
+    font-size: 4vw;
+}
 img {
     display: block;
 }
@@ -26,13 +29,14 @@ p {
 #navBar {
     background-color: #2E8955;
     color: #E1E1E1;
-    height: calc(10vh);
+    height: calc(12vh);
     margin-bottom: 0px;
+    text-align: center;
 }
 #home {
     background-color: #2E8955;
     color: #E1E1E1;
-    height: calc(70vh);
+    height: calc(58vh);
     overflow: hidden;
     text-align: center;
     vertical-align: baseline;
@@ -74,7 +78,24 @@ p {
     text-decoration: none;
     font-weight: bold;
 }
+#about_me {
+    background-color: #2E8955;
+    height: calc(10vh);
+}
+#games_ {
+    background-color: #2E8955;
+    height: calc(10vh);
+}
+#projects_ {
+    background-color: #2E8955;
+    padding-top: 1.5vh;
+    line-height: 2vh;
+    height: calc(10vh);
+    color: #E1E1E1;
+    text-align: center;
+}
 #slimeAttack {
+    outline: none;
     outline: none;
     box-shadow: none;
 }
@@ -93,7 +114,8 @@ p {
     color: inherit;
     margin-right: 4vw;
 }
-.homelink {
+#homeLink {
+    display: none;
     color: inherit;
     margin-right: 3vw;
 }
@@ -102,8 +124,24 @@ p {
     margin-right: 4vw;
     font-weight: bolder;
 }
+.ingameh {
+    display: inline;
+    color: inherit;
+    margin-right: 3vw;
+}
+.ingamen {
+    display: inline;
+    margin-left: 10vw;
+    color: #DFEB82;
+}
+.ingameb {
+    background-color: #2E8955;
+    color: #E1E1E1;
+    height: calc(12vh);
+    margin-bottom: 0px;
+    text-align: left;
+}
 .link:hover,
-.homelink:hover,
 .selfLink:hover,
 #resume:hover {
     filter: brightness(.75);
@@ -137,9 +175,10 @@ p {
 }
 .skillgridtop {
     grid-column: 1/5;
+    padding-top: 4vh;
 }
 .skillTop {
-    font-size: 4vw;
+    font-size: 3vw;
     text-decoration: underline;
     margin-left: 0;
     margin-right: 0;
@@ -257,14 +296,13 @@ p {
     font-size: 1.5vw;
     margin-left: 1vw;
     margin-right: 0;
-    
+    margin-bottom: 0;
+}
+#second {
+    text-indent: 30px;
 }
 #gamedis {
     background-color: #2E8955;
-    color: #E1E1E1;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    text-align: center;
 }
 .contactgrid {
     background-color: #2E8955;
@@ -354,6 +392,7 @@ p {
     image-rendering: pixelated;
 }
 #navName {
+    display: none;
     margin-left: 10vw;
     color: #DFEB82;
 }

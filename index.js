@@ -11,15 +11,63 @@ const slimeText2 = document.getElementById("effy");
 var health = 11;
 var size = 7;
 
+const aboutme = document.getElementById("aboutme");
+const aboutlink = document.getElementById("aboutLink");
+const games = document.getElementById("games");
+const gamelink = document.getElementById("gameLink");
+const homelink = document.getElementById("homeLink");
 const navBar = document.getElementById("navBar");
+const navName = document.getElementById("navName");
+const projects = document.getElementById("projects");
+const projectlink = document.getElementById("projectLink");
+const resume = document.getElementById("resume");
+var about = aboutme.getBoundingClientRect();
+var game = games.getBoundingClientRect();
 var rect = navBar.getBoundingClientRect();
+var project = projects.getBoundingClientRect();
 
 window.onload = function() {
     function checkNav() {
+        about = aboutme.getBoundingClientRect();
         rect = navBar.getBoundingClientRect();
+        game = games.getBoundingClientRect();
+        project = projects.getBoundingClientRect();
         if(rect.top < 0) {
             navBar.style.position = "sticky";
             navBar.style.top = 0;
+        }
+        if(rect.top > project.top-90) {
+            aboutlink.className = "link";
+            gamelink.className = "link";
+            projectlink.className = "selfLink";
+            homelink.style.display = "inline";
+            navName.style.display = "inline";
+            resume.style.display = "none";
+            navBar.style.textAlign = "left";
+        } else if(rect.top > game.top-90) {
+            aboutlink.className = "link";
+            gamelink.className = "selfLink";
+            projectlink.className = "link";
+            homelink.style.display = "inline";
+            navName.style.display = "inline";
+            resume.style.display = "none";
+            navBar.style.textAlign = "left";
+        } else if(rect.top > about.top-90) {
+            aboutlink.className = "selfLink";
+            gamelink.className = "link";
+            projectlink.className = "link";
+            homelink.style.display = "inline";
+            navName.style.display = "inline";
+            resume.style.display = "none";
+            navBar.style.textAlign = "left";
+        } else if(rect.top > about.top-320) {
+            aboutlink.className = "link";
+            gamelink.className = "link";
+            projectlink.className = "link";
+            homelink.style.display = "none";
+            navName.style.display = "none";
+            resume.style.display = "inline";
+            navBar.style.textAlign = "center";
         }
     }
     setInterval(checkNav, 1);
