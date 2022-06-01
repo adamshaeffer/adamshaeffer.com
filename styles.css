@@ -243,11 +243,24 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
-.modalgrid {
+.modalgrid1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 20vw;
+    margin: 0 auto;
+}
+.modalgrid2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2vw;
     width: 40vw;
+    margin: 0 auto;
+}
+.modalgrid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    width: 60vw;
     margin: 0 auto;
 }
 .modallink {
@@ -388,7 +401,7 @@ p {
     cursor: url(images/swordCursor.png), auto;
 }
 #gameimage {
-    width: 5vw;
+    height: 5vw;
     image-rendering: pixelated;
 }
 #navName {
