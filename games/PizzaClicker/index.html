@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href='pizzastyle.css' rel='stylesheet'>
+		<link href="pizzastyle.css" rel="stylesheet">
 	</head>
 	<body id="game">
-		<h1 class='cash' id='money'>$0</h1>
-		<button id='clicker' class='cash' onclick='makeMoney()'>Make Money!</button>
+		<h1 class="cash" id="money">$0</h1>
+		<button id="moneyclick" class="cash" onclick="makeMoney()">Make Money!</button>
+		<img src="images/makeMoney2.0.gif" alt="Make Money" id="moneygif" class="gif">
+		<h1 class="slice" id="pizza">Pizzas: 0</h1>
+		<button id="pizzaclick" class="slice" onclick="buyPizza()">Buy Pizza!</button>
+		<img src="images/buyPizza2.0.gif" alt="Buy Pizza" id="pizzagif" class="gif">
+
+		<h1 class="dialogue" id="frijoles"></h1>
 		<script src="index.js"></script>
 	</body>
 </html>	

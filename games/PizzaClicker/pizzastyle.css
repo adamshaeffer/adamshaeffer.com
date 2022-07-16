@@ -7,13 +7,30 @@ html {
     background-color: #fff771;
     font-size: 3vh;
     font-family: monospace;
+    text-align: center;
 }
 
 .cash {
     color: #20cf6c;
 }
+.slice {
+    color: #E20303;
+    display: none;
+}
+.gif {
+    display: none;
+    image-rendering: pixelated;
+    width: 10vw;
+
+}
+.dialogue {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 
 #game {
     padding-top: 4vh;
-    text-align: center;
+}
+#frijoles {
+    color: #7bffff;
 }
