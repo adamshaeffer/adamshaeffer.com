@@ -284,7 +284,8 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2vmin;
-    grid-gap: -2vw;
+    column-gap: -2vw;
+    row-gap:1vw;
 }
 .gridunit {
     background-color: #C6C4C4;
